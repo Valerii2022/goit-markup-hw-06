@@ -146,7 +146,6 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-brand-color);
-  margin-right: 120px;
 }
 
 .logo .brand-color {
@@ -177,11 +176,16 @@ button {
 }
 
 @media (min-width: 768px) {
+  .logo {
+    margin-right: 120px;
+  }
+
   .navigate-list {
     display: flex;
     align-items: center;
     gap: 40px;
   }
+
   .navigate-list .link {
     font-size: 16px;
     line-height: 1.5;
@@ -749,9 +753,6 @@ button {
   align-items: baseline;
 }
 
-.footer .logo-wrap {
-}
-
 .footer .logo {
   color: var(--primary-brand-color);
   display: inline-block;
@@ -767,7 +768,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-color);
-  max-width: 264px;
+  max-width: 268px;
 }
 
 .footer .social-wrap {
@@ -792,10 +793,6 @@ button {
   background-color: var(--success-color);
 }
 
-.footer .social-wrap {
-  margin-right: 80px;
-}
-
 .form-title {
   color: var(--white-background-color);
   font-size: 16px;
@@ -807,12 +804,12 @@ button {
 
 .footer-form {
   display: flex;
-  flex-direction: column;
-  gap: 24px;
+  gap: 16px;
+  align-items: center;
 }
 
 .footer-form .email-input {
-  width: 264px;
+  width: 396px;
   height: 40px;
   flex-shrink: 0;
   border-radius: 4px;
@@ -834,7 +831,7 @@ button {
 }
 
 .footer-form .form-btn {
-  min-width: 165px;
+  width: 165px;
   display: flex;
   padding: 8px 24px;
   justify-content: center;
@@ -861,7 +858,51 @@ button {
   fill: currentColor;
 }
 
+@media (max-width: 767px) {
+  .form-title {
+    text-align: center;
+  }
+
+  .social-wrap .title {
+    text-align: center;
+  }
+
+  .footer .container {
+    gap: 72px;
+    justify-content: center;
+  }
+
+  .footer-form {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1157px) {
+  .footer .container {
+    column-gap: 24px;
+    row-gap: 72px;
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+}
+
 @media (min-width: 768px) {
+  .footer .social-wrap {
+    width: 208px;
+    margin-right: 80px;
+  }
+
+  .footer .text {
+    max-width: 264px;
+  }
+
+  .footer-form .email-input {
+    width: 264px;
+  }
+
+  .footer-form {
+    gap: 24px;
+  }
 }
 
 @media (min-width: 1158px) {
