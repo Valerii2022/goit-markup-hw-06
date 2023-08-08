@@ -728,6 +728,10 @@ button {
 }
 
 @media (min-width: 768px) {
+  .customers .container {
+    width: 584px;
+  }
+
   .customers .list {
     column-gap: 24px;
   }
@@ -738,6 +742,10 @@ button {
 }
 
 @media (min-width: 1158px) {
+  .customers .container {
+    width: 100%;
+  }
+
   .customers .list {
     gap: 24px;
   }
@@ -898,17 +906,15 @@ button {
 
 @media (min-width: 768px) and (max-width: 1157px) {
   .footer .container {
+    width: 584px;
     column-gap: 24px;
     row-gap: 72px;
-    padding-left: 92px;
-    padding-right: 92px;
   }
 }
 
 @media (min-width: 768px) {
   .footer .social-wrap {
     width: 208px;
-    margin-right: 80px;
   }
 
   .footer .text {
@@ -926,6 +932,10 @@ button {
 }
 
 @media (min-width: 1158px) {
+  .footer .container {
+    width: 100%;
+  }
+
   .footer {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -933,6 +943,10 @@ button {
 
   .footer .logo-wrap {
     margin-right: 120px;
+  }
+
+  .footer .social-wrap {
+    margin-right: 80px;
   }
 }
 
@@ -1076,8 +1090,10 @@ button {
 }
 
 .modal {
-  padding: 72px 24px 24px;
-  width: 408px;
+  padding-top: 72px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
   min-height: 584px;
   background-color: var(--modal-background-color);
   position: absolute;
@@ -1088,6 +1104,14 @@ button {
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+}
+
+@media (min-width: 428px) {
+  .modal {
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 408px;
+  }
 }
 
 .close-btn {
